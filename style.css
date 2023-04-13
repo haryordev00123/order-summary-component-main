@@ -1,0 +1,135 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+body{
+  background: url(images/pattern-background-mobile.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  font-size: 16px;
+  font-family: 'Red Hat Display', sans-serif;
+  display: flex;
+}
+
+a,button{
+  cursor: pointer;
+  font-weight: 700;
+  color: hsl(224, 23%, 55%);
+  text-decoration: none;
+}
+
+p{
+  font-size: 16px;
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+h2,h4{
+  color: hsl(223, 47%, 23%);
+}
+
+.card-container{
+  width: 90%;
+  margin: auto ;
+  padding-bottom: 20px;
+  text-align: center;
+  background: white;
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.card-container header{
+  width: 100%;
+  height: 150px;
+  background: url("images/illustration-hero.svg");
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+#first-section,#second-section{
+  padding: 20px;
+  width: 100%;
+}
+
+#second-section{
+  margin-bottom: 8px;
+}
+
+#first-section h2{
+  margin: 10px 0;
+  font-weight: 900;
+}
+
+#second-section .payment{
+  background: hsl(225, 100%, 98%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+#second-section #plan-detail {
+  display: flex;
+  align-items: center;
+  gap:15px;
+}
+
+#plan-detail h4{
+  font-weight: 700;
+}
+
+#second-section .payment a{
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+}
+
+#second-section .payment a:hover{
+  opacity: 0.6;
+}
+
+#second-section button{
+  width: 95%;
+  padding: 10px;
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 6px;
+  border: 1px solid transparent;
+  background: hsl(245, 75%, 52%);
+  color:white;
+  border-radius: 10px;
+}
+
+#second-section button:hover{
+  opacity: 0.6;
+}
+
+#cancel-plan:hover{
+  color: hsl(223, 47%, 23%);
+}
+
+@media(min-width: 576px){
+  body{
+    background: url("images/pattern-background-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: top left;
+  }
+  .card-container{
+    width: 350px;
+  }
+  .card-container header{
+    height: 200px;
+  }
+}
